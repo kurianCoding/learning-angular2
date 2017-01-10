@@ -1,15 +1,23 @@
-import { Component } from '@angular/core';
-import { bootstrap } from '@angular/platform-browser-dynamic';
-
+import {Component} from '@angular/core';
+import {bootstrap} from '@angular/platform-browser-dynamic';
 @Component({
-  selector: 'hello-angular',
-  template: '<h1> {{greeting}} </h1>'
+    selector:'hello-angular',
+    template:`
+    <div>{{message}}
+     <input (keyup)="inputText($event)">
+    {{values}}
+    </div>
+    `
 })
-class HelloAngularComponent {
-  greeting: string;
-  constructor() {
-    this.greeting = 'Hello Angular 2!';
-  }
-}
+class HelloAngular {
+    message: string;
+    values: string;
+    constructor(){
+	this.message='hello angular2'; 
+    }
 
-bootstrap(HelloAngularComponent); // Component is bootstrapped!
+    inputText(event:KeyboardEvent){
+	this.values = (<HTMLInputElement>event.target).value;
+    }
+}
+bootstrap(HelloAngular);

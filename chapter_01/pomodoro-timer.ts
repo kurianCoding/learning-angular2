@@ -5,9 +5,11 @@ import { bootstrap } from '@angular/platform-browser-dynamic';
   selector: 'pomodoro-timer',
   template: `
     <div class="text-center">
-      <img src="assets/img/pomodoro.png" alt="Pomodoro">
       <h1> {{ minutes }}:{{ seconds | number: '2.0' }} </h1>
       <p>
+	  <button (click)="hello()" class="btn btn-warning">
+          {{ buttonLabel }}
+	  </button>
         <button (click)="togglePause()"
           class="btn btn-danger">
           {{ buttonLabel }}
