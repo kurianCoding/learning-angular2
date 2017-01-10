@@ -8,7 +8,6 @@ import { bootstrap } from '@angular/platform-browser-dynamic';
   encapsulation: ViewEncapsulation.Emulated
 })
 class CountdownComponent {
-  @Input() seconds: number;
   intervalId: number;
   @Output() complete: EventEmitter<any> = new EventEmitter();
   @Output() progress: EventEmitter<number> = new EventEmitter();
