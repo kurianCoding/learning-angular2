@@ -82,9 +82,9 @@ example ajax requests: made in javascript.
     When it executes the main script, it has the choice of cancelling the response if it
     does not meet the certain criteria.
 
-#Observable                                      Promise
-    Observable does not execute the main     	As soon as it is created it executes
-    script until it precives a change in        the main executor script.
+#Observable/Promise
+    Observable does not execute the main     	Promise executes
+    script until it precives a change in        the main executor script as soon as it is created.
     input variable.
 
     It can cancell the observer object un       Promise response can never be cancelled
