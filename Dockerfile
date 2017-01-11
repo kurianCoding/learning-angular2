@@ -8,5 +8,5 @@ RUN curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
 RUN apt-get -y install nodejs
 RUN npm install -g 'typescript@1.7.3'
 RUN mkdir -p /usr/src/app
-WORKDIR /var/www
+WORKDIR /var/www/redditApp
 EXPOSE 3001
