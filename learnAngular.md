@@ -70,7 +70,7 @@ both of the above actions trigger the digest loop.
     only once, the promise ensures this by setting the value of status flag to fulfille
     d/error once promise has been executed.
 
-    ##Dependencies in a promise:
+    	#Dependencies in a promise:
 	dependency is a javascript expression that is awaiting the execution of promise
 	from a previous expression. This function is passed on to the original promise
 	object as a function to be executed on the success of the child promise.
