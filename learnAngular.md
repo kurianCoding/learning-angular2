@@ -78,6 +78,14 @@ Promise:
 example ajax requests: made in javascript.
 
 Observables:
-    It sends requests when data asscociated with the event changes.
-    It can be added to an even with subscribe.
-    It can either cancel or accept the change.
+    An observable does not execute the main script until it percieves a change in input.
+    When it executes the main script, it has the choice of cancelling the response if it
+    does not meet the certain criteria.
+
+Observable                                   Promise
+    Observable does not execute the main     	As soon as it is created it executes
+    script until it precives a change in        the main executor script.
+    input variable.
+
+    It can cancell the observer object un       Promise response can never be cancelled
+    der conditions.
