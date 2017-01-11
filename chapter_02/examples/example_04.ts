@@ -1,1 +1,0 @@
-var isZeroGreaterThanOne: boolean = false;
